@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Very Hard</title>
+  </head>
+  <body>
+
+    <h1>javascript challenge</h1>
+
+    <script type="text/javascript">
+function calculator() {
+  var number1 = prompt("Input a number");
+  var operator1 = prompt("Input an operator");
+  var number2 = prompt("Input another number");
+//parseInt takes the string value of number1 and convert it to an interger and sets it to num1
+  var num1 =  parseInt(number1);
+  var num2 =  parseInt(number2);
+  
+  function add(num1,num2) {
+    let sum = num1 + num2;
+    console.log(num1 + " + " + num2 + " = " + sum);
+  }
+  if (operator1 === '+') {
+    add(num1,num2);
+  }
+  
+  function subtract(num1,num2) {
+    let difference = num1 - num2;
+    console.log(num1 + " - " + num2 + " = " + difference);
+  }
+  if (operator1 === '-') {
+    subtract(num1,num2);
+  }
+  
+  function multiply(num1,num2) {
+    let multiply = num1 * num2;
+    console.log(num1 + " * " + num2 + " = " + multiply);
+  }
+  if (operator1 === '*') {
+    multiply(num1,num2);
+  }
+  function divide(num1,num2) {
+    let quotient = num1 / num2;
+    console.log(num1 + " / " + num2 + " = " + quotient);
+  }
+  if (operator1 === '/') {
+    divide(num1,num2);
+  }
+}
+// create a prompt for each value for user input -number,operator,number
+// passed values from user input 
+calculator()
